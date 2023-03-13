@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_logros_odoo_logros_odoo,logros_odoo.logros_odoo,model_logros_odoo_logros_odoo,base.group_user,1,1,1,1
