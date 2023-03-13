@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+  
+    <record id="action_history" model="ir.actions.act_window">
+      <field name="name">Historial</field>
+      <field name="res_model">empleado.logro</field>
+      <field name="view_mode">tree,form,calendar</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            Crea un nuevo evento de logro
+          </p>
+      </field>
+    </record>
+
+    <record id="history_calendar" model="ir.ui.view">
+      <field name="name">empleado.logro.calendar</field>
+      <field name="model">empleado.logro</field>
+      <field name="arch" type="xml">
+        <calendar string="Historico logros" date_start="fecha_evento" date_stop="fecha_evento" color="dni">
+          <field name="nombre"/>
+          <field name="dni"/>
+          <field name="resultado"/>
+        </calendar>
+      </field>
+    </record>
+
+    <record id="history_tree" model="ir.ui.view">
+      <field name="name">empleado.logro.tree</field>
+      <field name="model">empleado.logro</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre"/>
+          <field name="dni"/>
+          <field name="resultado"/>
+        </tree>
+      </field>
+    </record>
+
+    <menuitem name="Historial logros" id="logros_historial" groups="base.group_user" action="action_history"/>
+
+  </data>
+</odoo>
