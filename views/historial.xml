@@ -17,7 +17,7 @@
       <field name="name">empleado.logro.calendar</field>
       <field name="model">empleado.logro</field>
       <field name="arch" type="xml">
-        <calendar string="Historico logros" date_start="fecha_evento" date_stop="fecha_evento" color="resultado">
+        <calendar string="Historico logros" date_start="fecha_evento" date_stop="fecha_evento" color="resultado" mode="month">
           <field name="nombre"/>
           <field name="name"/>
           <field name="resultado"/>
