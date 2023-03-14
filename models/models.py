@@ -24,9 +24,9 @@ class empleado_logro(models.Model):
     _description='empleado.logro'
 
     nombre = fields.Many2one('logros_odoo.logros_odoo', string="Logro")
-    fecha_evento = fields.Datetime(string="Fecha evento", default=fields.datetime.now(), required=True)
+    fecha_evento = fields.Datetime(string="Fecha logro", default=fields.datetime.now(), required=True)
     name = fields.Many2one('hr.employee', string="Empleado")
-    resultado = fields.Selection([("bueno", "Bueno"),("malo", "Malo"),("regular", "Regular")], required=True, string="Resultado")
+    resultado = fields.Selection([("bronce", "Bronce"),("plata", "Plata"),("oro", "Oro")], required=True, string="Nivel")
 
     def name_get(self):
         result = []
