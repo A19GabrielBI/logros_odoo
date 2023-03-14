@@ -8,9 +8,10 @@
                 <page name="historial_logros" string="Historial logros">
                     <field name="logros_history">
                         <tree editable="bottom">
+                            <field name="imagen_logro"  widget="image" options="{'size': [50, 50]}"/>
                             <field name="nombre"/>
+                            <field name="informacion_extra"/>
                             <field name="fecha_evento"/>
-                            <field name="resultado"/>
                         </tree>
                     </field>
                 </page>

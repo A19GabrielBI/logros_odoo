@@ -17,13 +17,31 @@
       <field name="name">empleado.logro.calendar</field>
       <field name="model">empleado.logro</field>
       <field name="arch" type="xml">
-        <calendar string="Historico logros" date_start="fecha_evento" date_stop="fecha_evento" color="resultado" mode="month">
+        <calendar string="Historico logros" date_start="fecha_evento" date_stop="fecha_evento" mode="month">
+          <field name="imagen_logro" widget="image" options="{'size': [50, 50]}" />
           <field name="nombre"/>
           <field name="name"/>
-          <field name="resultado"/>
+          <field name="informacion_extra"/>
         </calendar>
       </field>
     </record>
+
+    <record id="empleado_logro_form_view" model="ir.ui.view">
+      <field name="name">empleado.logro.form</field>
+      <field name="model">empleado.logro</field>
+      <field name="arch" type="xml">
+          <form string="Empleado logro">
+              <group>
+                  <field name="nombre"/>
+                  <field name="fecha_evento"/>
+                  <field name="name"/>
+                  <field name="informacion_extra"/>
+                  <field name="imagen_logro" widget="image" options="{'size': [150, 150]}"/>
+              </group>
+          </form>
+      </field>
+    </record>
+
 
     <record id="history_tree" model="ir.ui.view">
       <field name="name">empleado.logro.tree</field>
@@ -32,7 +50,7 @@
         <tree>
           <field name="nombre"/>
           <field name="name"/>
-          <field name="resultado"/>
+          <field name="informacion_extra"/>
         </tree>
       </field>
     </record>

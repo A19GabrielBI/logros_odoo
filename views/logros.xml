@@ -37,7 +37,7 @@
       </field>
     </record>
 
-    <menuitem name="LogrosOdoo" id="logros_odoo.menu_logros" groups="base.group_user" action="action_logros"/>
+    <menuitem name="Logros" id="logros_odoo.menu_logros" groups="base.group_user" action="action_logros"/>
 
 
   </data>
