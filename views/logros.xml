@@ -30,12 +30,10 @@
       <field name="name">logros_odoo.logros_odoo.kanban</field>
       <field name="model">logros_odoo.logros_odoo</field>
       <field name="arch" type="xml">
-        <kanban defualt_group_by="categoria">
-		      <field name="imagen"/>
+        <kanban default_group_by="categoria">
+          <field name="imagen" widget="image" type="html"/>
           <field name="nombre"/>
-          <field name="descripcion"/>
-          <field name="categoria"/>
-        </kanban>
+      </kanban>
       </field>
     </record>
 
