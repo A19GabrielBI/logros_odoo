@@ -26,6 +26,7 @@
         'security/ir.model.access.csv',
         'views/logros.xml',
         'views/historial.xml',
+        'views/employee.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

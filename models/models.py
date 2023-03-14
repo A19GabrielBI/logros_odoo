@@ -34,3 +34,8 @@ class empleado_logro(models.Model):
             name = record.nombre
             result.append((record.id, name))
         return result
+
+class HrEmployee(models.Model):
+    _inherit = 'hr.employee'
+	
+    logros_history = fields.One2many('empleado.logro', 'name', string="Historial")
