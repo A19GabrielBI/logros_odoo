@@ -8,6 +8,7 @@ class logros_odoo(models.Model):
     _description = 'logros_odoo.logros_odoo'
 
     nombre = fields.Char(string="Nombre", required=True)
+    imagen = fields.Binary(string="Imagen")
     descripcion = fields.Text(string="Descripcion", required=True)
     categoria =  fields.Char(string="Categoria", required=True)
 
